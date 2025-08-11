@@ -8,7 +8,7 @@
 </form>
 
 <form method="post" action="${pageContext.request.contextPath}/admin/book/save" style="display:grid;grid-template-columns:1fr 1fr 120px 120px;gap:8px;align-items:end;margin:12px 0">
-  <input name="id" placeholder="ID (de trong neu them moi)"/>
+  <input name="id" placeholder="ID (de trong neu them moi)" readonly/>
   <input name="title" placeholder="tieu de" required/>
   <input name="author" placeholder="tac gia" required/>
   <input name="quantity" type="number" min="0" value="0" required/>
