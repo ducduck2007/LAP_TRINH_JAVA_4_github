@@ -1,9 +1,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var="pageTitle" value="Yeu cau cua toi"/>
+<c:set var="pageTitle" value="Yêu cầu của tôi"/>
 <jsp:include page="../_layout_header.jsp"/>
-<h2>Yeu cau muon</h2>
+<h2>Yêu cầu mượn</h2>
 <table border="1" cellpadding="6" cellspacing="0">
-  <tr><th>Sach</th><th>Ngay gui</th><th>Trang thai</th></tr>
+  <tr><th>Sách</th><th>Ngày gửi</th><th>Trạng thái</th></tr>
   <c:forEach var="r" items="${requests}">
     <tr>
       <td>${r.book.title}</td>
