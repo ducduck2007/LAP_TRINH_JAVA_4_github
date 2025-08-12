@@ -5,12 +5,11 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <title><c:out value="${pageTitle}"/></title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/style.css"/>
+    <title>LibrarySystem TH04091</title>
 </head>
 <body>
 <c:set var="me" value="${sessionScope.AUTH_USER}"/>
-<header style="display:flex;gap:12px;align-items:center;justify-content:space-between;padding:10px;border-bottom:1px solid #eee">
+<header style="display:flex;gap:12px;align-items:center;justify-content:space-between;padding:10px 1rem;border-bottom:1px solid #eee">
     <div>
         <c:choose>
             <c:when test="${me != null && me.role == 'ADMIN'}">
@@ -37,7 +36,7 @@
                 <a href="${pageContext.request.contextPath}/logout" style="margin-left:10px">Logout</a>
             </c:when>
             <c:otherwise>
-                <a href="${pageContext.request.contextPath}/login">Login</a>
+                <a href="${pageContext.request.contextPath}/login">Dang nhap</a>
             </c:otherwise>
         </c:choose>
     </nav>

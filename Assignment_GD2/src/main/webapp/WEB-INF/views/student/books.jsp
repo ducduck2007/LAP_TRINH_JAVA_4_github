@@ -3,8 +3,8 @@
 <jsp:include page="../_layout_header.jsp"/>
 <h2>Danh sach sach</h2>
 <form method="get" style="margin:12px 0; display:flex; gap:8px">
-  <input name="q" value="${q}" placeholder="Tim kiem theo tieu de hoac tac gia" style="flex:1"/>
-  <button>Tim kiem</button>
+  <input name="q" value="${q}" placeholder="Tim kiem theo tieu de hoac tac gia" style="flex:1; padding: 6px"/>
+  <button style="padding: 6px">Tim kiem</button>
 </form>
 <table border="1" cellpadding="6" cellspacing="0">
   <tr><th>Tieu de</th><th>Tac gia</th><th>Sl con</th><th>Thao tac</th></tr>
