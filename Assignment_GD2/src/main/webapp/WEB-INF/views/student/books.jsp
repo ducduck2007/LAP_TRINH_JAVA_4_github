@@ -16,7 +16,7 @@
       <td>
         <c:choose>
           <c:when test="${b.quantity > 0}">
-            <form method="post" action="${pageContext.request.contextPath}/student/borrow">
+            <form method="post" action="${pageContext.request.contextPath}/student/borrow" class="borrow-form">
               <input type="hidden" name="bookId" value="${b.id}"/>
               <button>Muon</button>
             </form>
