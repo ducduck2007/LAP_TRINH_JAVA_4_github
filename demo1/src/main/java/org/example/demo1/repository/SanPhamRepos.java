@@ -16,7 +16,8 @@ public class SanPhamRepos {
                 "select sp from SanPham sp left join fetch sp.idLoaiSp",
                 SanPham.class
         );
-        return query.list();
+        List<SanPham> sanPhams = query.list();
+        return sanPhams;
     }
 
     public SanPham getById(Integer id) {

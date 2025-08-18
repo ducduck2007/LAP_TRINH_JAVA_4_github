@@ -47,8 +47,7 @@ public class SanPhamServlet extends HttpServlet {
     }
 
     private void hienThi(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<SanPham> sanPhams = sanPhamRepos.getAll();
-        req.setAttribute("sanPhams", sanPhams);
+        req.setAttribute("sanPhams", sanPhamRepos.getAll());
         req.setAttribute("loaiSpList", loaiSanPhamRepos.getAll());
         req.getRequestDispatcher("/views/hien-thi.jsp").forward(req, resp);
     }
