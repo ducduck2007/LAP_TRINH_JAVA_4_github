@@ -19,9 +19,4 @@ public class LoaiSanPhamRepos {
         Session session = Hibernate.getSession();
         return session.find(LoaiSanPham.class, id);
     }
-
-    public LoaiSanPham getByMa(String ma) {
-        Session session = Hibernate.getSession();
-        return session.createQuery("from LoaiSanPham where maLoaiSanPham = :ma", LoaiSanPham.class).setParameter("ma", ma).uniqueResult();
-    }
 }
